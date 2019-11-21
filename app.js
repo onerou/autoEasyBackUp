@@ -1,6 +1,7 @@
 const commandLog = require("./utils/commandLog.js");
 const syncShell = require("./model/syncShell.js");
 const { errorLog } = require("./utils/log.js");
+var pattern = /[.]/im;
 let parms = process.argv.slice(2);
 const showDialogue = () => {
   if (parms[1] && parms[2]) syncShell(parms[1], parms[2]);

@@ -6,7 +6,7 @@ const commandLog = require("../utils/commandLog.js");
 const { errorLog, defaultLog } = require("../utils/log.js");
 const { defaultBackupsPath } = require("../config/config.js");
 const spinner = require("../utils/spinner.js");
-var pattern = /[`~!@#$%^&*()_+<>?:"{},.\/;'[\]]/im;
+var pattern = /[.]/im;
 const addSyncFile = async () => {
   spinner.text = "正在备份...";
   spinner.start();
