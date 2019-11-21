@@ -16,7 +16,7 @@ let syncShell = (filePath, BackupsPath = defaultBackupsPath) => {
   try {
     // 先创建一个时间信息的文件夹，防止覆盖同一个文件夹
     shell.mkdir("-p", BackupsPath + folderName);
-    // shelljs 复制文件或者文件夹方法。-rf表示强制和递归方式复制。
+    // shelljs 复制者文件夹方法。-rf表示强制和递归方式复制。
     shell.cp("-rf", filePath, BackupsPath + folderName);
     symbol = "√";
     text = `已备份至${defaultBackupsPath + folderName}`;

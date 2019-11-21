@@ -10,10 +10,11 @@ const showDialogue = () => {
   commandLog({
     type: "String",
     name: "filePath",
-    message: "请输入要备份的文件或文件夹路径"
+    message: "请输入要备份的文件夹路径"
   }).then(filePath => {
-    if (filePath.filePath.length < 5) errorLog("请输入正确的文件路径");
-    if (filePath.filePath.length < 5) return;
+    if (filePath.filePath.length < 5 || pattern.test(filePath.filePath))
+      errorLog("请输入正确的文件夹路径");
+    if (filePath.filePath.length < 5 || pattern.test(filePath.filePath)) return;
     syncShell(filePath.filePath);
   });
 };
