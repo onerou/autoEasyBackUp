@@ -1,6 +1,10 @@
 [
     {
         "defaultBackupsPath": "E:/changyiWork/backups/",
-        "backupList": []
+        "backupList": [
+            {
+                "filePath": "E:\\changyiWork\\code\\crs-shop-wxapp\\src"
+            }
+        ]
     }
 ]

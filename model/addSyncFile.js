@@ -8,16 +8,19 @@ const { defaultBackupsPath } = require("../config/config.js");
 const spinner = require("../utils/spinner.js");
 var pattern = /[.]/im;
 const addSyncFile = async () => {
-  spinner.text = "正在备份...";
-  spinner.start();
+  
   let filePath = await commandLog({
     type: "String",
     name: "filePath",
     message: "请输入要备份的文件夹路径"
   });
-  if (filePath.filePath.length < 5 || pattern.test(filePath.filePath))
-    errorLog("请输入正确的文件夹路径");
-  if (filePath.filePath.length < 5 || pattern.test(filePath.filePath)) return;
+  
+  if (filePath.filePath.length < 5 || pattern.test(filePath.filePath)){
+    errorLog("请输入正确的文件夹路径")
+    return
+  }
+  spinner.text = "正在添加到备份列表...";
+  spinner.start();
   backupList
     .filter(v => v.defaultBackupsPath === defaultBackupsPath)
     .map(backup => {
