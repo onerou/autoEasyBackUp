@@ -7,8 +7,7 @@
     "prestart": "npm install",
     "start": "node scheduleApp.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sync": "node app.js",
-    "add": "node addSync.js"
+    "sync": "node app.js"
   },
   "author": "",
   "license": "ISC",

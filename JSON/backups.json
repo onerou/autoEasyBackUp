@@ -1,10 +1,6 @@
 [
     {
-        "defaultBackupsPath": "E:/changyiWork/backups/",
-        "backupList": [
-            {
-                "filePath": "E:\\changyiWork\\code\\crs-shop-wxapp\\src"
-            }
-        ]
+        "linkLocal": "/Users/hecheng/folder/github/autoEasyBackUp/test",
+        "backupPath": "/Users/hecheng/folder/backup/file"
     }
 ]

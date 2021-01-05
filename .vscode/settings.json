@@ -6,5 +6,8 @@
   "eslint.validate": ["javascript", "vue"],
   "prettier.semi": false,
   "eslint.autoFixOnSave": true,
-  "editor.formatOnSave": true
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  }
 }
