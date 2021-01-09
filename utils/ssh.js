@@ -3,7 +3,7 @@ const spinner = require('../utils/spinner.js')
 const { defaultZipPath, userName } = require('../config/config.js')
 module.exports = ({ host, username, password, fileName }) => {
   return new Promise((resolve, reject) => {
-    spinner.text = '正在添加到备份列表...'
+    spinner.text = '正在连接服务器...'
     spinner.start()
     const ssh = new node_ssh()
     ssh
